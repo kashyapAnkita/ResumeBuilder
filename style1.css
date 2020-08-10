@@ -1,0 +1,293 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Playfair Display', serif;
+}
+.logo{
+	color: #fff;
+}
+.navbar-custom{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background: rgba(17,219,207,0.8);
+}
+/*----about--*/
+.hero{
+	padding-top: 10.5rem;
+	padding-bottom: 6rem;
+	text-align: center;
+	color: #000;
+	background-image: url('banner2.png');
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center;
+	background-size: cover;
+}
+.hero-heading{
+	font-size: 3.25rem;
+	font-weight: bold;
+	line-height: 3.25rem;
+	margin-bottom: 2rem;
+	color: #fff;
+	letter-spacing: 1px;
+	color:rgba(17,219,207,0.8);
+}
+
+/*--End of hero image---*/
+	
+/*---About-----*/
+.about{
+	padding: 10px 0 0 0;
+}
+.about .icon-boxes h3{
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	margin-bottom: 15px;
+}
+.about .icon-box{
+	margin-top: 40px;
+}
+.about .icon-box .icon{
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 64px;
+	height: 64px;
+	border: 2px solid rgba(17,219,207,0.8);
+	border-radius: 50px;
+	transition: 0.5s;
+}
+.about .icon-box .icon i{
+	color: rgba(17,219,207,0.8);
+	font-size: 32px;
+}
+.about .icon-box:hover .icon{
+background: rgba(17,219,207,0.8);
+border-color: rgba(17,219,207,0.8);
+}
+.about .icon-box:hover .icon i{
+	color: #fff;
+
+}
+.about .icon-box .title{
+	margin-left: 85px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+.about .icon-box .title a{
+	color:rgba(17,219,207,0.8);
+	transition: 0.3s;
+}
+.about .icon-box .title a:hover{
+	color: rgba(17,219,207,0.8)
+}
+.about .icon-box .detail{
+	margin-left:85px;
+	line-height: 24px;
+	font-size: 14px;
+}
+/*---team-----*/
+.card-img-top{
+	height:200px;
+	width: 285px;
+}
+.about-section{
+	margin: 5rem;
+	margin-bottom: 5rem;
+}
+.about-heading{
+	text-transform: uppercase;
+}
+.about-heading-upper{
+	display: block;
+	font-size: 1rem;
+	font-weight: bold;
+}
+.about-heading-lower{
+	display: block;
+	font-size: 38px;
+	font-weight: lighter;
+}
+.bg-faded{
+	background: rgba(17,219,207,0.8);
+}
+.about-button .btn-color{
+	background: rgba(17,219,207,0.8);
+	color: #fff;
+	font-weight: bold;
+}
+.about{
+	position: relative;
+}
+@media screen and (min-width: 992px){
+	.about .about-img{
+		width: 75%;
+		float: right;
+	}
+	.about .about-text{
+		left: 0;
+		width: 60%;
+		margin-top: 3rem;
+		position: absolute;
+	}
+	.about .about-text .about-button{
+		width: 100%;
+		left: 0;
+		position: absolute;
+		bottom: -2rem;
+	}
+}
+@media screen and (min-width: 1200px){
+	.about .about-text{
+		width: 45%;
+	}
+}
+/*services-----*/
+.service{
+	text-align: center;
+	padding: 70px 20px 80px 20px;
+	background: rgba(17,219,207,0.5);
+}
+.service .icon{
+	margin: 0 auto;
+	width:64px;
+	height: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background: #ffff;
+	border-radius: 50px;
+}
+.service .icon i{
+	font-size: 32px;
+	line-height: 1;
+	position: relative;
+	color: #047aeff;
+}
+.service h4{
+margin: 10px 0 15px 0;
+font-weight: bold;
+font-size: 22px;
+}
+.service p{
+	line-height: 24px;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+/*----end of services--*/
+.team{
+	background: #fff;
+}
+.team .member{
+	position: relative;
+	box-shadow: 1px 2px 15px rgba(17,219,207,0.5)
+	padding:30px;
+	border-radius: 10px;
+	text-align: center;
+}
+.team .member .image{
+overflow: hidden;
+width: 150px;
+border-radius: 50%;
+margin: 0 auto 20px auto;
+
+}
+.team .member .image img{
+	transition: ease-in-out 0.3s;
+}
+.team .member:hover img{
+	transform: scale(1.1);
+}
+.team .member h4{
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 20px;
+	color: black;
+}
+.team .member span{
+	display: block;
+	font-size: 15px;
+	padding-bottom: 10px;
+	position: relative;
+	font-weight: bold;
+}
+.team .member span:after{
+content: "";
+position: absolute;
+display: block;
+width: 50px;
+height: 1px;
+background: #b5b3ba;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.team .member p{
+	margin: 10px 0 0 0;
+	font-size: 140x;
+}
+.team .social{
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.team .social a{
+	transition: ease-in-out .3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	width: 32px;
+	height: 32px;
+	background: #11dbcf;
+
+}
+.team .social a i{
+	color: #fff;
+	font-size: 16px;
+	margin: 0 2px;
+}
+.team .social a:hover{
+	background: #00eeff;
+}
+.team .social a{
+	margin-left: 8px;
+}
+/*------end of team member--------*/
+/*---contact----*/
+
+.contact .info{
+	padding: 20px 40px;
+	background:  #00eeff;
+	color: #000;
+	text-align: center;
+	border:1px solid white;
+}
+.contact .info{
+	font-size: 30px;
+	color: black;
+	margin-bottom: 15px
+}
+.contact .info h4{
+	padding: 0;
+	margin: 0 0 10px 0;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.contact .info p{
+	font-size: 15px;
+}
+.btn .btn-color{
+	background: #03a59a;
+	color: #fff;
+	font-weight: bold;
